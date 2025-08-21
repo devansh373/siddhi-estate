@@ -23,14 +23,7 @@ const nextConfig = {
       "source.unsplash.com"
     ],
   },
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "https://api.minimalistictechnology.com/api/:path*", // backend server
-      },
-    ];
-  },
+ 
 };
 
 export default nextConfig;

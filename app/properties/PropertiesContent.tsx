@@ -36,7 +36,7 @@ export default function PropertiesContent() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await api.get("/properties");
+        const response = await api.get("/proxy/properties");
         setAllProperties(response.data); 
       } catch (error) {
         console.error("Failed to fetch properties:", error);
